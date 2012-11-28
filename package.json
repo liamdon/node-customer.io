@@ -1,0 +1,18 @@
+{
+  "author": "Liam Don <liam@classdojo.com>",
+  "name": "customer.io",
+  "description": "A simple interface to the customer.io REST api",
+  "version": "0.0.1",
+  "tags": ["customer.io", "email", "events"],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:liamdon/node-customer.io"
+  },
+  "main": "./index.js",
+  "engines": {
+    "node": ">=0.6"
+  },
+  "dependencies": {
+    "coffee-script": ""
+  }
+}
