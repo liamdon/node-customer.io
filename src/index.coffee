@@ -8,14 +8,16 @@ DEFAULT_API_URL_PATTERNS = [
   "/v1/customers/{CUSTOMER_ID}/events"
 ]
 
-authString      = null
-client          = null
-hostname        = null
-pathPrefix      = null
-apiEndpoint     = null
-apiUrlPatterns  = null
+
 
 init = (siteId, secretKey) ->
+
+  authString      = null
+  client          = null
+  hostname        = null
+  pathPrefix      = null
+  apiEndpoint     = null
+  apiUrlPatterns  = null
 
   cio = {}
 
