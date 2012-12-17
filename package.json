@@ -2,7 +2,7 @@
   "author": "Liam Don <liam@classdojo.com>",
   "name": "customer.io",
   "description": "A simple interface to the customer.io REST api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "tags": ["customer.io", "email", "events"],
   "repository": {
     "type": "git",
