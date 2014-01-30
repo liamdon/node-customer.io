@@ -13,6 +13,6 @@
     "node": ">=0.6"
   },
   "dependencies": {
-    "coffee-script": ""
+    "coffee-script": "1.6.x"
   }
 }
