@@ -87,17 +87,19 @@ init = (siteId, secretKey) ->
   cio.initAPIURLPatterns(DEFAULT_API_URL_PATTERNS)
 
   cio.encodeAttributes = (key, newArray, jsonObject) ->
-  if typeof jsonObject isnt "object"
-    newArray[key] = jsonObject  unless typeof (jsonObject) is "function"
-    return newArray
-  for jsonKey of jsonObject
-    currentKey = key
-    if currentKey is ""
-      currentKey = "data[" + jsonKey + "]"
-    else
-      currentKey += "[" + jsonKey + "]"
-    newArray = encodeAttributes(currentKey, newArray, jsonObject[jsonKey])
-  newArray
+    if not jsonObject?
+      return newArray
+    if typeof jsonObject isnt "object"
+      newArray[key] = jsonObject  unless typeof (jsonObject) is "function"
+      return newArray
+    for jsonKey of jsonObject
+      currentKey = key
+      if currentKey is ""
+        currentKey = "data[" + jsonKey + "]"
+      else
+        currentKey += "[" + jsonKey + "]"
+      newArray = cio.encodeAttributes(currentKey, newArray, jsonObject[jsonKey])
+    newArray
 
   # -------------------------------
   # Core module methods
@@ -125,7 +127,7 @@ init = (siteId, secretKey) ->
       data = null
     attributes = {}
     path = apiUrlPatterns[1].replace "{CUSTOMER_ID}", customerId
-    attributes = encodeAttributes("", [], data)
+    attributes = cio.encodeAttributes("", [], data)
     attributes.name = eventName
     return methods.http 'POST', path, authString, attributes, callback
   # -------------------------------
