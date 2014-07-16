@@ -125,8 +125,8 @@ init = (siteId, secretKey) ->
       data = null
     attributes = {}
     path = apiUrlPatterns[1].replace "{CUSTOMER_ID}", customerId
-	attributes = encodeAttributes("", [], data)
-	attributes.name = eventName
+    attributes = encodeAttributes("", [], data)
+    attributes.name = eventName
     return methods.http 'POST', path, authString, attributes, callback
   # -------------------------------
 
