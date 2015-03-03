@@ -2,7 +2,7 @@
   "contributors": [{"name":"Liam Don", "email":"liam@classdojo.com"},{"name":"ArcusSolutions","email":"david.thor@arcussolutions.com"}],
   "name": "arcus.customer.io",
   "description": "A simple interface to the customer.io REST api originally created by Liam Don with a bug fix by Arcus Solutions.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "tags": ["customer.io", "email", "events"],
   "repository": {
     "type": "git",
