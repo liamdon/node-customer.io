@@ -1,18 +1,18 @@
 {
-  "author": "Liam Don <liam@classdojo.com>",
-  "name": "customer.io",
-  "description": "A simple interface to the customer.io REST api",
-  "version": "0.0.2",
+  "contributors": [{"name":"Liam Don", "email":"liam@classdojo.com"},{"name":"ArcusSolutions","email":"david.thor@arcussolutions.com"}],
+  "name": "arcus.customer.io",
+  "description": "A simple interface to the customer.io REST api originally created by Liam Don with a bug fix by Arcus Solutions.",
+  "version": "0.0.4",
   "tags": ["customer.io", "email", "events"],
   "repository": {
     "type": "git",
-    "url": "git@github.com:liamdon/node-customer.io"
+    "url": "git@github.com:ArcusSolutions/node-customer.io"
   },
   "main": "./index.js",
   "engines": {
     "node": ">=0.6"
   },
   "dependencies": {
-    "coffee-script": ""
+    "coffee-script": "1.6.x"
   }
 }
