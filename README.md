@@ -1,7 +1,7 @@
 node-customer.io
 =============
 
-This module provides a simple interface to the [customer.io](http://customer.io) REST api, which is documented here: [http://customer.io/docs/api/rest.html]()
+This module provides a simple interface to the [customer.io](http://customer.io) REST api, which is documented here: [http://customer.io/docs/api/rest.html](http://customer.io/docs/api/rest.html)
 
 Installation
 ----------------
